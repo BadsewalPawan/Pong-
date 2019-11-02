@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1026E4F204D8784B9B01491E407DD51A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		10BD6D329B02C3275995F12648C56B90 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E491C9F33541E8F0D6641915EA0308 /* PageView.swift */; };
+		2D30889B4E1FC09CB6FDB15B96AD30E9 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA69E29AFB76C1AE82EFE143FE5411D /* GestureControl.swift */; };
+		3346ABD8DBFC61551BA6DD0AEC5CB9DE /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A5DBC2F924CFD6EB1521D1E4ED77F /* PageContainer.swift */; };
+		360319AE4C64EE0B405DB9D924779255 /* Pods-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74087858FB420DA03B555F61C4F343E1 /* Pods-watchOS-dummy.m */; };
+		409BCBFBF2161753E6B85649EF6633C5 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F1AAC7810E6305D839F907AF74BD6 /* OnboardingContantViewItem.swift */; };
+		48696FE82A4D8086055541E81DC94107 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057F41F074E08B15CDF670A1CBC4675 /* PageViewItem.swift */; };
+		4F5FAA1BFB6846C4C80D881F3B9355A7 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F75705C5B194427329A67D9BA678B /* FillAnimationView.swift */; };
+		5A1AE014B6FF9AC20A3402A7B05BA7E5 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C369AEC1C9B7ECFFB38CF58D137AFE /* OnboardingContentView.swift */; };
+		61430A34EB37246ABC3F8E8E29806F38 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E0A5F98F996693959F6E7A66F2E30 /* Configuring.swift */; };
+		66D2E16A248430B979133176DCC3B109 /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A0CADA20EF164DCC0B291C40CBB2 /* PaperOnboardingDelegate.swift */; };
+		68C2B1B294AF8EC7F470E3DFF1D751D6 /* Pods-Pong!-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 998BB4E27D4DDAEB5DA3262898052B01 /* Pods-Pong!-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F40549485C323FB1AD05B7B64A7E2F4 /* Pods-watchOS Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4858149E4EB9F9762CCBAC7BB001ED4E /* Pods-watchOS Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7455C21A8CDE7750973B1EA649305312 /* paper-onboarding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D7DE7908CFB9BE1366D597375C441A /* paper-onboarding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B53731E0B40472029A70FD3B478AEF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		7F50CF51193FF17ADB369102B3483F1A /* Pods-watchOS Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE28E2BCB7DE3B5AD09079D39E950B /* Pods-watchOS Extension-dummy.m */; };
+		85EE7A0CB68505A4ABBC14C8B528EABB /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64085524F3955A22B8E44F254596A96A /* ConstraintsHelper.swift */; };
+		95B275E5AF577F7B174F94853E2FA9E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
+		A6BB6CE51253AE6B3000492002921E78 /* Pods-Pong!-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6780BFD4F6AC7961A183AE2A40B1D /* Pods-Pong!-dummy.m */; };
+		CD0A71E316A3C77C88AE6C30C3562CB0 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD8342A802BC50970EB8562D3960A8 /* PaperOnboarding.swift */; };
+		CDEAFF50FED59401B66C354798994E30 /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0F8692DC17D691A6ED59C29B3376A /* PaperOnboardingDataSource.swift */; };
+		DC1474A8A5F9C27D852181B661944619 /* paper-onboarding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B86C797C8AAD3B184E83DC4E484785D8 /* paper-onboarding-dummy.m */; };
+		E3514543FCAD5BFF61E006EA01875AA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
+		ECC8B2ABC81113C5BA985B4E4C4F8EF0 /* Pods-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76673934F4D2A0B6BBEA29F1E9B77DA6 /* Pods-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E0414171D92E125055C9BAB3D18E523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 738B2050D3EE6CEF2F8FC5020EAB44A1;
+			remoteInfo = "paper-onboarding";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01090D2C051C67DF91A5CE5A01180061 /* Pods-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		032B493EF8021B102651F9504EAA7D2B /* paper-onboarding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "paper-onboarding.xcconfig"; sourceTree = "<group>"; };
+		0DAD155D08C9FECA609FA17365A37D42 /* Pods_Pong_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pong_.framework; path = "Pods-Pong!.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1057F41F074E08B15CDF670A1CBC4675 /* PageViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewItem.swift; path = Source/PageView/Item/PageViewItem.swift; sourceTree = "<group>"; };
+		1378CAD960EDB3C589B2178F905DF778 /* Pods-Pong!-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pong!-frameworks.sh"; sourceTree = "<group>"; };
+		15D7DE7908CFB9BE1366D597375C441A /* paper-onboarding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-umbrella.h"; sourceTree = "<group>"; };
+		18291D5F8C9C3FD9BEC0BCC5A5229899 /* Pods-Pong!-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pong!-resources.sh"; sourceTree = "<group>"; };
+		18307F6E584217C9F4C68434CB830645 /* Pods-watchOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS-resources.sh"; sourceTree = "<group>"; };
+		1EA69E29AFB76C1AE82EFE143FE5411D /* GestureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = Source/GestureControl/GestureControl.swift; sourceTree = "<group>"; };
+		1EC5A0CADA20EF164DCC0B291C40CBB2 /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDelegate.swift; path = Source/PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
+		2F7E59C34A7D2D202D37AAC1C8D17C40 /* Pods_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_watchOS.framework; path = "Pods-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D0F8692DC17D691A6ED59C29B3376A /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboardingDataSource.swift; path = Source/PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		3BC4B7AA24780F3C4BE4D69A6CD7B03A /* Pods-watchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-watchOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C5F75705C5B194427329A67D9BA678B /* FillAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillAnimationView.swift; path = Source/FillAnimationView/FillAnimationView.swift; sourceTree = "<group>"; };
+		40638B5FED72096250F0399BC283114B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427C8374151003ED947866E998657117 /* Pods-Pong!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pong!.debug.xcconfig"; sourceTree = "<group>"; };
+		44691204D2CB201ABB14DE843F320EFA /* paper-onboarding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "paper-onboarding.modulemap"; sourceTree = "<group>"; };
+		4858149E4EB9F9762CCBAC7BB001ED4E /* Pods-watchOS Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-watchOS Extension-umbrella.h"; sourceTree = "<group>"; };
+		50BA3963665674FE326DF8CA2A217CF1 /* Pods_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_watchOS_Extension.framework; path = "Pods-watchOS Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54759B08713C2BD63401AF1015BC7752 /* Pods-Pong!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pong!.release.xcconfig"; sourceTree = "<group>"; };
+		61E491C9F33541E8F0D6641915EA0308 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = Source/PageView/PageView.swift; sourceTree = "<group>"; };
+		64085524F3955A22B8E44F254596A96A /* ConstraintsHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsHelper.swift; path = Source/Helpers/ConstraintsHelper.swift; sourceTree = "<group>"; };
+		6D74987C01B52AA55DA761FE9BB6C739 /* Pods-watchOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS-frameworks.sh"; sourceTree = "<group>"; };
+		6E39F043A65B1158E3A70D47A894E7FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72642F836BD9E7D27FF73B3F34D2055F /* paper_onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = paper_onboarding.framework; path = "paper-onboarding.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74087858FB420DA03B555F61C4F343E1 /* Pods-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-watchOS-dummy.m"; sourceTree = "<group>"; };
+		76673934F4D2A0B6BBEA29F1E9B77DA6 /* Pods-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		7DFBAEEA40DA08568D44659DB18E23B8 /* Pods-watchOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-watchOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EBE28E2BCB7DE3B5AD09079D39E950B /* Pods-watchOS Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-watchOS Extension-dummy.m"; sourceTree = "<group>"; };
+		8EF9C4DBF161B347B25410F39AC4EC59 /* Pods-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C78EA9BB51AF3BF6FA1F1DCF480CAD /* Pods-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		998BB4E27D4DDAEB5DA3262898052B01 /* Pods-Pong!-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pong!-umbrella.h"; sourceTree = "<group>"; };
+		9CFD8342A802BC50970EB8562D3960A8 /* PaperOnboarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboarding.swift; path = Source/PaperOnboarding.swift; sourceTree = "<group>"; };
+		A1C84FFE38EA79DEA2635E32D4A080FE /* Pods-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A3C369AEC1C9B7ECFFB38CF58D137AFE /* OnboardingContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContentView.swift; path = Source/OnboardingContentView/OnboardingContentView.swift; sourceTree = "<group>"; };
+		AF372C4AA449BCF5367D65EA352D35CA /* Pods-watchOS Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS Extension-frameworks.sh"; sourceTree = "<group>"; };
+		B4DE7D670B9CD6EB96C45DECB2360E75 /* Pods-watchOS Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-watchOS Extension.modulemap"; sourceTree = "<group>"; };
+		B76E0A5F98F996693959F6E7A66F2E30 /* Configuring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuring.swift; path = Source/Helpers/Configuring.swift; sourceTree = "<group>"; };
+		B86C797C8AAD3B184E83DC4E484785D8 /* paper-onboarding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "paper-onboarding-dummy.m"; sourceTree = "<group>"; };
+		C01ED0A8C05586300FA62E2087B75814 /* paper-onboarding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-prefix.pch"; sourceTree = "<group>"; };
+		C07A5DBC2F924CFD6EB1521D1E4ED77F /* PageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageContainer.swift; path = Source/PageView/PageContainerView/PageContainer.swift; sourceTree = "<group>"; };
+		C153CF61F97BFE22CE71509461DAAB73 /* Pods-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-watchOS.modulemap"; sourceTree = "<group>"; };
+		C231FDF8CB7DB6CA1E90918E5D7A6240 /* Pods-watchOS Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-watchOS Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC222E7F30EBF2749F49239A831A46F4 /* Pods-Pong!-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pong!-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2288525B0F9CC84369D67EFC38C5D79 /* Pods-Pong!-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pong!-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2E6780BFD4F6AC7961A183AE2A40B1D /* Pods-Pong!-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pong!-dummy.m"; sourceTree = "<group>"; };
+		D53B40C619D10E477845955F92C95B17 /* Pods-watchOS Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-watchOS Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2C46939347D3EFEAB5AD3AA12A53F99 /* Pods-Pong!.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pong!.modulemap"; sourceTree = "<group>"; };
+		E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F2E34D790CB2F3ED2BE5E891722967DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5F1AAC7810E6305D839F907AF74BD6 /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContantViewItem.swift; path = Source/OnboardingContentView/Item/OnboardingContantViewItem.swift; sourceTree = "<group>"; };
+		FD8026427A4CDD94AEFFB3FE2EB63599 /* Pods-watchOS Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-watchOS Extension-resources.sh"; sourceTree = "<group>"; };
+		FF5CFA5D98F6C31E62CD2B8FB9A81C7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23A4609F22A4BF02D1704D9E5136591E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1026E4F204D8784B9B01491E407DD51A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DFA7364A7AA3CE5A89FD9AFF7700532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3514543FCAD5BFF61E006EA01875AA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E07E39981584EEBC3CDFD56AB72FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B53731E0B40472029A70FD3B478AEF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0B615D6CCCE3B497716E51C8B44520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B275E5AF577F7B174F94853E2FA9E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0396BECD04A9D19EEF85C915F37220D3 /* paper-onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B76E0A5F98F996693959F6E7A66F2E30 /* Configuring.swift */,
+				64085524F3955A22B8E44F254596A96A /* ConstraintsHelper.swift */,
+				3C5F75705C5B194427329A67D9BA678B /* FillAnimationView.swift */,
+				1EA69E29AFB76C1AE82EFE143FE5411D /* GestureControl.swift */,
+				FD5F1AAC7810E6305D839F907AF74BD6 /* OnboardingContantViewItem.swift */,
+				A3C369AEC1C9B7ECFFB38CF58D137AFE /* OnboardingContentView.swift */,
+				C07A5DBC2F924CFD6EB1521D1E4ED77F /* PageContainer.swift */,
+				61E491C9F33541E8F0D6641915EA0308 /* PageView.swift */,
+				1057F41F074E08B15CDF670A1CBC4675 /* PageViewItem.swift */,
+				9CFD8342A802BC50970EB8562D3960A8 /* PaperOnboarding.swift */,
+				39D0F8692DC17D691A6ED59C29B3376A /* PaperOnboardingDataSource.swift */,
+				1EC5A0CADA20EF164DCC0B291C40CBB2 /* PaperOnboardingDelegate.swift */,
+				C6839ED2409555091485BB7555C822CC /* Support Files */,
+			);
+			name = "paper-onboarding";
+			path = "paper-onboarding";
+			sourceTree = "<group>";
+		};
+		1BED0BC20B47A82F70C93FBA59B7E42B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72642F836BD9E7D27FF73B3F34D2055F /* paper_onboarding.framework */,
+				0DAD155D08C9FECA609FA17365A37D42 /* Pods_Pong_.framework */,
+				2F7E59C34A7D2D202D37AAC1C8D17C40 /* Pods_watchOS.framework */,
+				50BA3963665674FE326DF8CA2A217CF1 /* Pods_watchOS_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EDB28B8D8A0823FD3D01C74F341E4B5 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		4DB296F289AF03BE7274762EAD83C16F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0396BECD04A9D19EEF85C915F37220D3 /* paper-onboarding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				4DB296F289AF03BE7274762EAD83C16F /* Pods */,
+				1BED0BC20B47A82F70C93FBA59B7E42B /* Products */,
+				8771F34976B85FEDC148D36F951888CD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8771F34976B85FEDC148D36F951888CD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F30698A3DFE0EB4CB033355CE7D026B /* Pods-Pong! */,
+				B34C6B41B98CB9F9AEE5F561C861293D /* Pods-watchOS */,
+				D01031938DC6C93C99C7688D0534DB56 /* Pods-watchOS Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F30698A3DFE0EB4CB033355CE7D026B /* Pods-Pong! */ = {
+			isa = PBXGroup;
+			children = (
+				40638B5FED72096250F0399BC283114B /* Info.plist */,
+				E2C46939347D3EFEAB5AD3AA12A53F99 /* Pods-Pong!.modulemap */,
+				CC222E7F30EBF2749F49239A831A46F4 /* Pods-Pong!-acknowledgements.markdown */,
+				D2288525B0F9CC84369D67EFC38C5D79 /* Pods-Pong!-acknowledgements.plist */,
+				D2E6780BFD4F6AC7961A183AE2A40B1D /* Pods-Pong!-dummy.m */,
+				1378CAD960EDB3C589B2178F905DF778 /* Pods-Pong!-frameworks.sh */,
+				18291D5F8C9C3FD9BEC0BCC5A5229899 /* Pods-Pong!-resources.sh */,
+				998BB4E27D4DDAEB5DA3262898052B01 /* Pods-Pong!-umbrella.h */,
+				427C8374151003ED947866E998657117 /* Pods-Pong!.debug.xcconfig */,
+				54759B08713C2BD63401AF1015BC7752 /* Pods-Pong!.release.xcconfig */,
+			);
+			name = "Pods-Pong!";
+			path = "Target Support Files/Pods-Pong!";
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F375DB63C3BCC11AF9808234753C618A /* iOS */,
+				1EDB28B8D8A0823FD3D01C74F341E4B5 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B34C6B41B98CB9F9AEE5F561C861293D /* Pods-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E39F043A65B1158E3A70D47A894E7FC /* Info.plist */,
+				C153CF61F97BFE22CE71509461DAAB73 /* Pods-watchOS.modulemap */,
+				7DFBAEEA40DA08568D44659DB18E23B8 /* Pods-watchOS-acknowledgements.markdown */,
+				3BC4B7AA24780F3C4BE4D69A6CD7B03A /* Pods-watchOS-acknowledgements.plist */,
+				74087858FB420DA03B555F61C4F343E1 /* Pods-watchOS-dummy.m */,
+				6D74987C01B52AA55DA761FE9BB6C739 /* Pods-watchOS-frameworks.sh */,
+				18307F6E584217C9F4C68434CB830645 /* Pods-watchOS-resources.sh */,
+				76673934F4D2A0B6BBEA29F1E9B77DA6 /* Pods-watchOS-umbrella.h */,
+				01090D2C051C67DF91A5CE5A01180061 /* Pods-watchOS.debug.xcconfig */,
+				8EF9C4DBF161B347B25410F39AC4EC59 /* Pods-watchOS.release.xcconfig */,
+			);
+			name = "Pods-watchOS";
+			path = "Target Support Files/Pods-watchOS";
+			sourceTree = "<group>";
+		};
+		C6839ED2409555091485BB7555C822CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2E34D790CB2F3ED2BE5E891722967DA /* Info.plist */,
+				44691204D2CB201ABB14DE843F320EFA /* paper-onboarding.modulemap */,
+				032B493EF8021B102651F9504EAA7D2B /* paper-onboarding.xcconfig */,
+				B86C797C8AAD3B184E83DC4E484785D8 /* paper-onboarding-dummy.m */,
+				C01ED0A8C05586300FA62E2087B75814 /* paper-onboarding-prefix.pch */,
+				15D7DE7908CFB9BE1366D597375C441A /* paper-onboarding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/paper-onboarding";
+			sourceTree = "<group>";
+		};
+		D01031938DC6C93C99C7688D0534DB56 /* Pods-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF5CFA5D98F6C31E62CD2B8FB9A81C7A /* Info.plist */,
+				B4DE7D670B9CD6EB96C45DECB2360E75 /* Pods-watchOS Extension.modulemap */,
+				D53B40C619D10E477845955F92C95B17 /* Pods-watchOS Extension-acknowledgements.markdown */,
+				C231FDF8CB7DB6CA1E90918E5D7A6240 /* Pods-watchOS Extension-acknowledgements.plist */,
+				7EBE28E2BCB7DE3B5AD09079D39E950B /* Pods-watchOS Extension-dummy.m */,
+				AF372C4AA449BCF5367D65EA352D35CA /* Pods-watchOS Extension-frameworks.sh */,
+				FD8026427A4CDD94AEFFB3FE2EB63599 /* Pods-watchOS Extension-resources.sh */,
+				4858149E4EB9F9762CCBAC7BB001ED4E /* Pods-watchOS Extension-umbrella.h */,
+				93C78EA9BB51AF3BF6FA1F1DCF480CAD /* Pods-watchOS Extension.debug.xcconfig */,
+				A1C84FFE38EA79DEA2635E32D4A080FE /* Pods-watchOS Extension.release.xcconfig */,
+			);
+			name = "Pods-watchOS Extension";
+			path = "Target Support Files/Pods-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		F375DB63C3BCC11AF9808234753C618A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		338FCF93A8681C4883B418EFFD66E49B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC8B2ABC81113C5BA985B4E4C4F8EF0 /* Pods-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFB2FD8AB956FA5E19FA6B7AE32C9B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F40549485C323FB1AD05B7B64A7E2F4 /* Pods-watchOS Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F0B4B9004DDDD3861DB7BD9AABBC82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C2B1B294AF8EC7F470E3DFF1D751D6 /* Pods-Pong!-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025A52D0EFD2820155A870EEA13A4C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7455C21A8CDE7750973B1EA649305312 /* paper-onboarding-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0F1C8062762AC00D8F9FF77BD2BCD9 /* Build configuration list for PBXNativeTarget "paper-onboarding" */;
+			buildPhases = (
+				51939CF808A8AD03A5E37CB8C1090A43 /* Sources */,
+				87E07E39981584EEBC3CDFD56AB72FAC /* Frameworks */,
+				D025A52D0EFD2820155A870EEA13A4C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "paper-onboarding";
+			productName = "paper-onboarding";
+			productReference = 72642F836BD9E7D27FF73B3F34D2055F /* paper_onboarding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF5707A01FF8616873898F102E34364D /* Pods-Pong! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD1DB296342B73C0855AB3E1621C19E /* Build configuration list for PBXNativeTarget "Pods-Pong!" */;
+			buildPhases = (
+				9D4958FB0BC5D5F8D84F56ED10CEEE39 /* Sources */,
+				23A4609F22A4BF02D1704D9E5136591E /* Frameworks */,
+				74F0B4B9004DDDD3861DB7BD9AABBC82 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15C5F64BC4D3299033C71676BD9ACC8F /* PBXTargetDependency */,
+			);
+			name = "Pods-Pong!";
+			productName = "Pods-Pong!";
+			productReference = 0DAD155D08C9FECA609FA17365A37D42 /* Pods_Pong_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFDD57D525F1044B49D2832AC0F6E9AD /* Pods-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F97C0F721AEB7115E625CF907DEE20 /* Build configuration list for PBXNativeTarget "Pods-watchOS Extension" */;
+			buildPhases = (
+				B8AD075E5A2683F819EFF22801CEB147 /* Sources */,
+				5DFA7364A7AA3CE5A89FD9AFF7700532 /* Frameworks */,
+				5AFB2FD8AB956FA5E19FA6B7AE32C9B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-watchOS Extension";
+			productName = "Pods-watchOS Extension";
+			productReference = 50BA3963665674FE326DF8CA2A217CF1 /* Pods_watchOS_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA1CD0044FB14046CE328D6D71DCD040 /* Pods-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE6CB03E9654E25B4D479EA80D0A44E /* Build configuration list for PBXNativeTarget "Pods-watchOS" */;
+			buildPhases = (
+				5D14A51359E988F61EF982ABEC0ECA06 /* Sources */,
+				CB0B615D6CCCE3B497716E51C8B44520 /* Frameworks */,
+				338FCF93A8681C4883B418EFFD66E49B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-watchOS";
+			productName = "Pods-watchOS";
+			productReference = 2F7E59C34A7D2D202D37AAC1C8D17C40 /* Pods_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BED0BC20B47A82F70C93FBA59B7E42B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */,
+				BF5707A01FF8616873898F102E34364D /* Pods-Pong! */,
+				FA1CD0044FB14046CE328D6D71DCD040 /* Pods-watchOS */,
+				BFDD57D525F1044B49D2832AC0F6E9AD /* Pods-watchOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51939CF808A8AD03A5E37CB8C1090A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61430A34EB37246ABC3F8E8E29806F38 /* Configuring.swift in Sources */,
+				85EE7A0CB68505A4ABBC14C8B528EABB /* ConstraintsHelper.swift in Sources */,
+				4F5FAA1BFB6846C4C80D881F3B9355A7 /* FillAnimationView.swift in Sources */,
+				2D30889B4E1FC09CB6FDB15B96AD30E9 /* GestureControl.swift in Sources */,
+				409BCBFBF2161753E6B85649EF6633C5 /* OnboardingContantViewItem.swift in Sources */,
+				5A1AE014B6FF9AC20A3402A7B05BA7E5 /* OnboardingContentView.swift in Sources */,
+				3346ABD8DBFC61551BA6DD0AEC5CB9DE /* PageContainer.swift in Sources */,
+				10BD6D329B02C3275995F12648C56B90 /* PageView.swift in Sources */,
+				48696FE82A4D8086055541E81DC94107 /* PageViewItem.swift in Sources */,
+				DC1474A8A5F9C27D852181B661944619 /* paper-onboarding-dummy.m in Sources */,
+				CD0A71E316A3C77C88AE6C30C3562CB0 /* PaperOnboarding.swift in Sources */,
+				CDEAFF50FED59401B66C354798994E30 /* PaperOnboardingDataSource.swift in Sources */,
+				66D2E16A248430B979133176DCC3B109 /* PaperOnboardingDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D14A51359E988F61EF982ABEC0ECA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360319AE4C64EE0B405DB9D924779255 /* Pods-watchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4958FB0BC5D5F8D84F56ED10CEEE39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BB6CE51253AE6B3000492002921E78 /* Pods-Pong!-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8AD075E5A2683F819EFF22801CEB147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F50CF51193FF17ADB369102B3483F1A /* Pods-watchOS Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C5F64BC4D3299033C71676BD9ACC8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "paper-onboarding";
+			target = 738B2050D3EE6CEF2F8FC5020EAB44A1 /* paper-onboarding */;
+			targetProxy = 0E0414171D92E125055C9BAB3D18E523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1274D32C225F2E7B6EBA5B3583FF312B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C78EA9BB51AF3BF6FA1F1DCF480CAD /* Pods-watchOS Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS Extension/Pods-watchOS Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		1C5EA44A0FDA89D9AA85BE9CE4FFB12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032B493EF8021B102651F9504EAA7D2B /* paper-onboarding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding/paper-onboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/paper-onboarding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/paper-onboarding/paper-onboarding.modulemap";
+				PRODUCT_MODULE_NAME = paper_onboarding;
+				PRODUCT_NAME = paper_onboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		465F8D549CC3942E5FC9D6A815E0A35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C84FFE38EA79DEA2635E32D4A080FE /* Pods-watchOS Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS Extension/Pods-watchOS Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		476AA610675CB7CFD2D429C6E659D475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427C8374151003ED947866E998657117 /* Pods-Pong!.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pong!/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pong!/Pods-Pong!.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50950199FA5C9AA88A31EC64A32A551D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		623B9E84B402AB31E2D86F57D3225AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54759B08713C2BD63401AF1015BC7752 /* Pods-Pong!.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pong!/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pong!/Pods-Pong!.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9974F52A5FCD6B8260443D9CC8090BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01090D2C051C67DF91A5CE5A01180061 /* Pods-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS/Pods-watchOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		A209DD520548305BDBCA2BDD8E612CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		B34D89D410752955B28F8973B46384B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032B493EF8021B102651F9504EAA7D2B /* paper-onboarding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding/paper-onboarding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/paper-onboarding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/paper-onboarding/paper-onboarding.modulemap";
+				PRODUCT_MODULE_NAME = paper_onboarding;
+				PRODUCT_NAME = paper_onboarding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1B4ABA1A685C059EFB7F9D10510C0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF9C4DBF161B347B25410F39AC4EC59 /* Pods-watchOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-watchOS/Pods-watchOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0F1C8062762AC00D8F9FF77BD2BCD9 /* Build configuration list for PBXNativeTarget "paper-onboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5EA44A0FDA89D9AA85BE9CE4FFB12E /* Debug */,
+				B34D89D410752955B28F8973B46384B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50950199FA5C9AA88A31EC64A32A551D /* Debug */,
+				A209DD520548305BDBCA2BDD8E612CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE6CB03E9654E25B4D479EA80D0A44E /* Build configuration list for PBXNativeTarget "Pods-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9974F52A5FCD6B8260443D9CC8090BE3 /* Debug */,
+				D1B4ABA1A685C059EFB7F9D10510C0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD1DB296342B73C0855AB3E1621C19E /* Build configuration list for PBXNativeTarget "Pods-Pong!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476AA610675CB7CFD2D429C6E659D475 /* Debug */,
+				623B9E84B402AB31E2D86F57D3225AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F97C0F721AEB7115E625CF907DEE20 /* Build configuration list for PBXNativeTarget "Pods-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1274D32C225F2E7B6EBA5B3583FF312B /* Debug */,
+				465F8D549CC3942E5FC9D6A815E0A35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

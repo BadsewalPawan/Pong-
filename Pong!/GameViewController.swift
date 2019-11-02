@@ -11,21 +11,21 @@ import SpriteKit
 import GameplayKit
 
 var currentGameMode:gameMode!
-var impulseForce:Double = 2
 
 class GameViewController: UIViewController {
 
     var timer = Timer()
+    @IBOutlet var backBtn: UIButton!
     
-    
-    @IBAction func reset(_ sender: UIButton) {
-        timer.invalidate()
-        impulseForce = 3
+    @objc func dimBackBtn(){
+        UIView.animate(withDuration: 1, delay: 0, options: [.allowUserInteraction, .curveEaseIn], animations: {
+            self.backBtn.alpha = 0.6
+        }, completion: nil)
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(dimBackBtn), userInfo: nil, repeats: false)
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = GameScene(fileNamed: "GameScene"){
@@ -35,15 +35,12 @@ class GameViewController: UIViewController {
                 // Present the scene
                 view.presentScene(scene)
             }
-            timer = Timer.scheduledTimer(withTimeInterval: 15, repeats: true, block: { _ in
-                impulseForce += 0.5
-            })
             view.ignoresSiblingOrder = true
-            view.showsFPS = true
-            view.showsNodeCount = true
         }
     }
 
+    override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge { return .bottom }
+    
     override var shouldAutorotate: Bool {
         return true
     }
